@@ -1,0 +1,93 @@
+/*Cascating Stylesheet*/
+* { /*Seletor universal, aplica para todos os elementos da página*/
+    margin: 0;
+}
+
+html, body {
+    height: 100%; /*Altura*/
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;/*Deixa a fonte mais suave*/
+}
+
+body {
+    display: grid; /*Maneira de visualização dos elementos do site*/
+    place-items: center; /*Só funciona por conta do grid*/
+}
+
+main {
+    background: url(img/background_cracha.png);
+    background-color: rgb(117, 183, 241);
+    width: 375px;
+    height: 812px;
+}
+
+.container {
+    max-width: 250px;/*Largura Máxima do container*/
+    margin-left: auto; /**/
+    margin-right: auto;
+    text-align: center;
+    color:rgb(32 33 36);
+}
+
+.avatar {
+    width: 189px;
+    margin: 11.5rem auto 0; /*top, left right, bottom*/
+}
+
+.avatar > img {
+    width: 189px;
+    height: 11,5rem;
+    object-fit: cover; /*Conserta a imagem*/
+    border-radius: 50%;
+}
+
+
+h1 { /*Referência de todo h1 que vai ter no projeto*/
+    font-size: 24px; /*propriedades do h1*/
+    margin-top: 35px;
+}
+
+a { 
+    margin-top: 5px;
+    font-weight: bold;
+    color: rgb(32 33 36);/*Muda a cor do texto*/
+    text-decoration: none; /*Tira a formatação*/
+}
+
+.git-hub {
+    color: rgb(32 33 36);
+}
+
+.git-hub:hover {
+    transition: 0.1s ease-in;
+    color: #0097b2;
+}
+
+p {
+    margin-top: 32px;
+    text-align: justify;
+}
+
+ul {
+    margin-top: 64px;
+    list-style: none; /*Tira as bolinhas da ul*/
+    padding: 0; /*Zerei o padding pois ele estava com um preenchimento que estava desalinhando*/
+    display: flex; /*Deixa um elemento ao lado do outro no eixo X*/
+    justify-content: center; /*O text-align n funciona pois não é mais propriedade de texto*/
+    gap: 15px; /*Espaço entre os ícones*/
+}
+
+.icons-sm {
+    border: solid 2px #0097b2;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.icons-sm:hover { 
+    border-color: #0097b2;
+    background-color: #0097b2;
+}
+
+.icons-sm {
+    transition: 0.1s ease-in;
+}
